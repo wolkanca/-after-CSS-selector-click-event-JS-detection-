@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+    <title>JS click before // after detection</title>
+    <style>
+      div {
+        margin: 20px;
+      }
+
+      span:after {
+        content: ' - AFTER -';
+        position: absolute;
+      }
+
+      span.c2:after {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <span>test </span>
+    </div>
+    <script>
+      targetdiv = document.querySelector('span');
+      targetdiv.addEventListener('click', function(e) {
+        if (e.offsetX > targetdiv.offsetWidth) {
+          console.log('clicked');
+          targetdiv.className = 'c2';
+        }
+      });
+    </script>
+  </body>
+</html>
