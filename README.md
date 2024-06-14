@@ -35,6 +35,8 @@ Burada amaç bir elemanın :before veya ::after kısmına tıklandığını bulm
     });
 ```
 
-Github: [github.com/wolkanca/-after-CSS-selector-click-event-JS-detection-](https://github.com/wolkanca/-after-CSS-selector-click-event-JS-detection-)
+Via: [JS click before veya after](https://wolkanca.com/js-click-before-veya-after/)
+
+Have fun.
 
 Afiyet olsun.
