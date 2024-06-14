@@ -14,7 +14,7 @@
         position: absolute;
       }
 
-      span.c2:after {
+      span.target:after {
         color: red;
       }
     </style>
@@ -28,7 +28,7 @@
       targetdiv.addEventListener('click', function(e) {
         if (e.offsetX > targetdiv.offsetWidth) {
           console.log('clicked');
-          targetdiv.className = 'c2';
+          targetdiv.className = 'target';
         }
       });
     </script>
