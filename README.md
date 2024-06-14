@@ -12,7 +12,7 @@ Burada amaç bir elemanın :before veya ::after kısmına tıklandığını bulm
 
 
 ### jQuery:
--------
+```js
 
     $('.targetdiv').click(function(e) {
     	if (e.offsetX > $(this).width() || e.offsetY > $(this).height()) {
@@ -20,9 +20,10 @@ Burada amaç bir elemanın :before veya ::after kısmına tıklandığını bulm
     		console.log('clicked');
     	}
     });
+```
 
 ### Pure JS:
---------
+```js
 
     targetdiv = document.querySelector('span');
     targetdiv.addEventListener('click', function(e) {
@@ -31,7 +32,7 @@ Burada amaç bir elemanın :before veya ::after kısmına tıklandığını bulm
     		targetdiv.className = 'target';
     	}
     });
-    
+```
 
 Github: [github.com/wolkanca/-after-CSS-selector-click-event-JS-detection-](https://github.com/wolkanca/-after-CSS-selector-click-event-JS-detection-)
 
